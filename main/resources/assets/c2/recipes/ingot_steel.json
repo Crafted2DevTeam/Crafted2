@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " c ",
+        "cIc",
+        " c "
+    ],
+    "key": {
+        "I": {
+            "item": "minecraft:iron_ingot",
+            "data": 0
+        },
+        "c": {
+            "item": "c2:carbon",
+            "data": 0
+        }
+    },
+     "result":
+    {
+        "item": "c2:ingot_steel",
+        "count": 1
+    }
+}
