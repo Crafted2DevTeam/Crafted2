@@ -1,8 +1,8 @@
 //Items
 item.ingot_copper.name=Copper Ingot
 item.ingot_steel.name=Steel Ingot
-item.carbon.name=Carbon
-item.hammer_wood.name= Wood Hammer
+item.carbon.name=Carbon Dust
+item.hammer_wood.name= Wooden Hammer
 
 //Blocks
 tile.block_copper.name=Copper Block

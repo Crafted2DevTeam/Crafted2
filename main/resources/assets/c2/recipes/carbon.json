@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "c2:ore_overworld_carbon",
+            "data": 0
+        },
+        {
+            "item": "c2:hammer_wood",
+            "data": 0
+        }
+    ],
+      "result":
+    {
+        "item": "c2:carbon",
+        "count": 1
+    }
+}

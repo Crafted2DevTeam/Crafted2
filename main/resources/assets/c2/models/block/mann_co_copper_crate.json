@@ -2,7 +2,8 @@
 	"credit": "Created by Asc4Yin",
 	"textures": {
 		"0": "c2:blocks/crate_1",
-		"1": "c2:blocks/crate_2"
+		"1": "c2:blocks/crate_2",
+		"particle": "c2:blocks/crate_1"
 	},
 	"elements": [
 		{

@@ -6,23 +6,23 @@ public class EnumHandler
 {
 	public static enum EnumType implements IStringSerializable
 	{
-		COPPER(0, "copper"),
-		CARBON(1, "carbon");
+		CARBON(0, "carbon"),
+		COPPER(1, "copper");
 		
 		private static final EnumType[] META_LOOKUP = new EnumType[values().length];
 		private final int meta;
-		private final String name, unlocializedName;
+		private final String name, unlocalizedName;
 		
 		private EnumType(int meta, String name)
 		{
 			this(meta, name, name);
 		}
 		
-		private EnumType(int meta, String name, String unlocializedName)
+		private EnumType(int meta, String name, String unlocalizedName)
 		{
 			this.meta = meta;
 			this.name= name;
-			this.unlocializedName = unlocializedName;
+			this.unlocalizedName = unlocalizedName;
 		}
 		
 		@Override
@@ -36,9 +36,9 @@ public class EnumHandler
 			return this.meta;
 		}
 		
-		public String getUnlocializedName()
+		public String getUnlocalizedName()
 		{
-			return this.unlocializedName;
+			return this.unlocalizedName;
 		}
 		
 		@Override

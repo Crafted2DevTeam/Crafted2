@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " ws",
+        " sw",
+        "s  "
+    ],
+    "key": {
+        "w": {
+            "item": "minecraft:planks",
+            "data": 0
+        },
+        "s": {
+        	"item": "minecraft:stick",
+        	"data": 0
+        }	
+    },
+     "result":
+    {
+        "item": "c2:hammer_wood",
+        "count": 1
+    }
+}

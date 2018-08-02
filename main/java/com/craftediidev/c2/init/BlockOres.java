@@ -34,7 +34,7 @@ public class BlockOres extends Block implements IHasModel, IMetaName
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(Main.craftedtab);
-		setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, EnumHandler.EnumType.COPPER));
+		setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, EnumHandler.EnumType.CARBON));
 		
 		this.name = name;
 		this.dimension = dimension;
