@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "cBc",
+        "BWB",
+        "cBc"
+    ],
+    "key": {
+        "W": {
+            "item": "minecraft:chest",
+            "data": 0
+        },
+        "c": {
+            "item": "c2:ingot_copper",
+            "data": 0
+        },
+        "B": {
+        	"item": "minecraft:blaze_rod",
+        	"data": 0
+        }	
+    },
+     "result":
+    {
+        "item": "c2:mann_co_copper_crate",
+        "count": 1
+    }
+}

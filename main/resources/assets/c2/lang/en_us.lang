@@ -1,0 +1,17 @@
+//Items
+item.ingot_copper.name=Copper Ingot
+item.ingot_steel.name=Steel Ingot
+item.carbon.name=Carbon
+item.hammer_wood.name= Wood Hammer
+
+//Blocks
+tile.block_copper.name=Copper Block
+tile.block_steel.name=Steel Block
+tile.mann_co_copper_crate.name=Mann Co. Copper Crate
+
+//Tabs
+itemGroup.craftedtab=Crafted2 Mod
+
+//Ores
+tile.ore_overworld_copper.name=Copper Ore
+tile.ore_overworld_carbon.name=Carbon Ore
