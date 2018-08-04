@@ -4,6 +4,7 @@ import com.craftediidev.c2.Main;
 import com.craftediidev.c2.proxy.CommonProxy;
 import com.craftediidev.c2.tabs.CraftedTab;
 import com.craftediidev.c2.util.Reference;
+import com.craftediidev.c2.util.handlers.RegistryHandler;
 import com.craftediidev.c2.init.ModRecipes;
 
 import net.minecraft.creativetab.CreativeTabs;
@@ -28,14 +29,17 @@ public class Main {
 
 	@EventHandler
 	public static void PreInit(FMLPreInitializationEvent event) {
+		RegistryHandler.preInitRegistries();
 	}
 
 	@EventHandler
 	public static void init(FMLInitializationEvent event) {
 		ModRecipes.init();
+		RegistryHandler.initRegistries();
 	}
 
 	@EventHandler
 	public static void Postinit(FMLPostInitializationEvent event) {
+		RegistryHandler.postInitRegistries();
 	}
 }

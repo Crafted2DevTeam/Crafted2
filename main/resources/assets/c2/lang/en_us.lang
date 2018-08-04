@@ -8,6 +8,7 @@ item.hammer_wood.name= Wooden Hammer
 tile.block_copper.name=Copper Block
 tile.block_steel.name=Steel Block
 tile.mann_co_copper_crate.name=Mann Co. Copper Crate
+tile.mann_co_steel_crate.name=Mann Co. Steel Crate
 
 //Tabs
 itemGroup.craftedtab=Crafted2 Mod
@@ -15,3 +16,6 @@ itemGroup.craftedtab=Crafted2 Mod
 //Ores
 tile.ore_overworld_copper.name=Copper Ore
 tile.ore_overworld_carbon.name=Carbon Ore
+
+//Entities
+entity.mikey.name=Mikey

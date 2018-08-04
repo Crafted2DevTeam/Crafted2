@@ -1,5 +1,6 @@
 package com.craftediidev.c2.util.handlers;
 
+import com.craftediidev.c2.init.EntityInit;
 import com.craftediidev.c2.init.ModBlocks;
 import com.craftediidev.c2.init.ModItems;
 import com.craftediidev.c2.util.IHasModel;
@@ -21,10 +22,10 @@ public class RegistryHandler
 	}
     
     @SubscribeEvent
-   	public static void onBlockRegister(RegistryEvent.Register<Block> event)
-   	{
-   		event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
-   	}
+	public static void onBlockRegister(RegistryEvent.Register<Block> event) 
+	{
+		event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
+	}
 	
 	@SubscribeEvent
 	public static void onModelRegister(ModelRegistryEvent event)
@@ -44,5 +45,19 @@ public class RegistryHandler
 				((IHasModel)block).registerModels();
 			}
 		}
+	}
+	
+	public static void preInitRegistries()
+	{
+		EntityInit.registerEntities();
+		RenderHandler.RegisterEntityRenders();
+	}
+	
+	public static void initRegistries() {
+		
+	}
+	
+	public static void postInitRegistries() {
+		
 	}
 }	
