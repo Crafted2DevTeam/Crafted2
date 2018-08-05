@@ -1,0 +1,7 @@
+{
+	"variants":
+	{
+		"variant=copper": { "model": "c2:ore_end_copper" },
+		"variant=carbon" : { "model": "c2:ore_end_carbon" }
+	}
+}

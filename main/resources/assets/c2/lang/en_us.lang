@@ -13,9 +13,18 @@ tile.mann_co_steel_crate.name=Mann Co. Steel Crate
 //Tabs
 itemGroup.craftedtab=Crafted2 Mod
 
-//Ores
+//Ores (Overworld)
 tile.ore_overworld_copper.name=Copper Ore
 tile.ore_overworld_carbon.name=Carbon Ore
+
+
+//Ores (Nether)
+tile.ore_nether_copper.name=Fiery Copper Ore
+tile.ore_nether_carbon.name=Fiery Carbon Ore
+
+//Ores (End)
+tile.ore_end_copper.name=Ender Copper Ore
+tile.ore_end_carbon.name=Ender Carbon Ore
 
 //Entities
 entity.mikey.name=Mikey
