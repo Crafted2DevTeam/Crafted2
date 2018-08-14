@@ -9,4 +9,9 @@ public class Reference {
 	public static final String COMMON_PROXY_CLASS = "com.craftediidev.c2.proxy.CommonProxy";
 	
 	public static final int ENTITY_MIKEY = 120;
+	public static final int GUI_COPPER_CRATE = 2;
+	public static final int GUI_STEEL_CRATE = 2;
+	public static final int GUI_EMARALD_CRATE = 2;
+
+
 }
