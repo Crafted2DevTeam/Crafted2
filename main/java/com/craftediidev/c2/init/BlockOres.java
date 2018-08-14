@@ -2,9 +2,9 @@ package com.craftediidev.c2.init;
 
 import com.craftediidev.c2.Main;
 import com.craftediidev.c2.objects.blocks.item.ItemBlockVariants;
-import com.craftediidev.c2.util.IHasModel;
-import com.craftediidev.c2.util.IMetaName;
 import com.craftediidev.c2.util.handlers.EnumHandler;
+import com.craftediidev.c2.util.interfaces.IHasModel;
+import com.craftediidev.c2.util.interfaces.IMetaName;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

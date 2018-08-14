@@ -3,8 +3,9 @@ package com.craftediidev.c2.util.handlers;
 import com.craftediidev.c2.init.EntityInit;
 import com.craftediidev.c2.init.ModBlocks;
 import com.craftediidev.c2.init.ModItems;
-import com.craftediidev.c2.util.IHasModel;
+import com.craftediidev.c2.util.interfaces.IHasModel;
 import com.craftediidev.c2.world.gen.WorldGenCustomOres;
+import com.craftediidev.c2.world.gen.WorldGenCustomStructures;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -52,6 +53,7 @@ public class RegistryHandler
 	public static void preInitRegistries()
 	{
 		GameRegistry.registerWorldGenerator(new WorldGenCustomOres(), 0);
+		GameRegistry.registerWorldGenerator(new WorldGenCustomStructures(), 0);
 		
 		EntityInit.registerEntities();
 		RenderHandler.RegisterEntityRenders();
