@@ -12,17 +12,17 @@ public class ContainerMannCoEmaraldCrate extends Container
 	private final int numRows;
 	private final TileEntityMannCoEmaraldCrate chestInventory;
 	
-	public ContainerMannCoEmaraldCrate(InventoryPlayer playerInv, TileEntityMannCoEmaraldCrate tileEntityCopperChest, EntityPlayer player) 
+	public ContainerMannCoEmaraldCrate(InventoryPlayer playerInv, TileEntityMannCoEmaraldCrate tileEntityMannCoEmaraldCrate, EntityPlayer player) 
 	{
-		this.chestInventory = tileEntityCopperChest;
-		this.numRows = tileEntityCopperChest.getSizeInventory() / 9;
-		tileEntityCopperChest.openInventory(player);
+		this.chestInventory = tileEntityMannCoEmaraldCrate;
+		this.numRows = tileEntityMannCoEmaraldCrate.getSizeInventory() / 9;
+		tileEntityMannCoEmaraldCrate.openInventory(player);
 		
 		for(int i = 0; i < this.numRows; ++i)
 		{
 			for(int j = 0; j < 9; ++j)
 			{
-				this.addSlotToContainer(new Slot(tileEntityCopperChest, j + i*9, 8 + j*18, 18 + i*18));
+				this.addSlotToContainer(new Slot(tileEntityMannCoEmaraldCrate, j + i*9, 8 + j*18, 18 + i*18));
 			}
 		}
 		

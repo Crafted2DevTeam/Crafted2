@@ -11,13 +11,13 @@ import net.minecraft.util.ResourceLocation;
 
 public class GuiMannCoSteelCrate extends GuiContainer
 {
-	private static final ResourceLocation GUI_CHEST = new ResourceLocation(Reference.MOD_ID + ":textures/gui/mann_co_copper_crate.png");
+	private static final ResourceLocation GUI_CHEST = new ResourceLocation(Reference.MOD_ID + ":textures/gui/mann_co_steel_crate.png");
 	private final InventoryPlayer playerInventory;
-	private final TileEntityMannCoCopperCrate te;
+	private final TileEntityMannCoSteelCrate te;
 	
-	public GuiMannCoSteelCrate(InventoryPlayer playerInventory, TileEntityMannCoCopperCrate chestInventory, EntityPlayer player) 
+	public GuiMannCoSteelCrate(InventoryPlayer playerInventory, TileEntityMannCoSteelCrate chestInventory, EntityPlayer player) 
 	{
-		super(new ContainerMannCoCopperCrate(playerInventory, chestInventory, player));
+		super(new ContainerMannCoSteelCrate(playerInventory, chestInventory, player));
 		this.playerInventory = playerInventory;
 		this.te = chestInventory;
 		

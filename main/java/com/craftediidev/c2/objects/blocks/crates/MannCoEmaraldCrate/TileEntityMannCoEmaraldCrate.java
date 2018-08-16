@@ -19,8 +19,7 @@ public class TileEntityMannCoEmaraldCrate extends TileEntityLockableLoot impleme
 {
 	private NonNullList<ItemStack> chestContents = NonNullList.<ItemStack>withSize(72, ItemStack.EMPTY);
 	public int numPlayersUsing, ticksSinceSync;
-	public float lidAngle, prevLidAngle;
-	
+ 	
 	@Override
 	public int getSizeInventory()
 	{
@@ -47,7 +46,7 @@ public class TileEntityMannCoEmaraldCrate extends TileEntityLockableLoot impleme
 	@Override
 	public String getName() 
 	{
-		return this.hasCustomName() ? this.customName : "container.copper_chest";
+		return this.hasCustomName() ? this.customName : "Mann Co Emarald Crate";
 	}
 	
 	@Override
@@ -80,7 +79,7 @@ public class TileEntityMannCoEmaraldCrate extends TileEntityLockableLoot impleme
 	@Override
 	public String getGuiID() 
 	{
-		return Reference.MOD_ID + ":copper_chest";
+		return Reference.MOD_ID + ":emarlad_crate";
 	}
 	
 	@Override
@@ -109,48 +108,7 @@ public class TileEntityMannCoEmaraldCrate extends TileEntityLockableLoot impleme
             }
         }
 		
-        this.prevLidAngle = this.lidAngle;
-        float f1 = 0.1F;
-
-        if (this.numPlayersUsing > 0 && this.lidAngle == 0.0F)
-        {
-            double d1 = (double)pos.getX() + 0.5D;
-            double d2 = (double)pos.getZ() + 0.5D;
-            this.world.playSound((EntityPlayer)null, d1, (double)pos.getY() + 0.5D, d2, SoundEvents.BLOCK_IRON_TRAPDOOR_OPEN, SoundCategory.BLOCKS, 0.5F, this.world.rand.nextFloat() * 0.1F + 0.9F);
-        }
-
-        if (this.numPlayersUsing == 0 && this.lidAngle > 0.0F || this.numPlayersUsing > 0 && this.lidAngle < 1.0F)
-        {
-            float f2 = this.lidAngle;
-
-            if (this.numPlayersUsing > 0)
-            {
-                this.lidAngle += 0.1F;
-            }
-            else
-            {
-                this.lidAngle -= 0.1F;
-            }
-
-            if (this.lidAngle > 1.0F)
-            {
-                this.lidAngle = 1.0F;
-            }
-
-            float f3 = 0.5F;
-
-            if (this.lidAngle < 0.5F && f2 >= 0.5F)
-            {
-                double d3 = (double)pos.getX() + 0.5D;
-                double d0 = (double)pos.getZ() + 0.5D;
-                this.world.playSound((EntityPlayer)null, d3, (double)pos.getY() + 0.5D, d0, SoundEvents.BLOCK_IRON_TRAPDOOR_CLOSE, SoundCategory.BLOCKS, 0.5F, this.world.rand.nextFloat() * 0.1F + 0.9F);
-            }
-
-            if (this.lidAngle < 0.0F)
-            {
-                this.lidAngle = 0.0F;
-            }
-        }		
+         		
 	}
 	
 	@Override

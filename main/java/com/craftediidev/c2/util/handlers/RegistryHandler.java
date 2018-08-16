@@ -1,11 +1,11 @@
 package com.craftediidev.c2.util.handlers;
 
+import com.craftediidev.c2.Main;
 import com.craftediidev.c2.init.EntityInit;
 import com.craftediidev.c2.init.ModBlocks;
 import com.craftediidev.c2.init.ModItems;
-import com.craftediidev.c2.util.interfaces.IHasModel;
+import com.craftediidev.c2.util.IHasModel;
 import com.craftediidev.c2.world.gen.WorldGenCustomOres;
-import com.craftediidev.c2.world.gen.WorldGenCustomStructures;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -13,6 +13,7 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @EventBusSubscriber
@@ -53,14 +54,15 @@ public class RegistryHandler
 	public static void preInitRegistries()
 	{
 		GameRegistry.registerWorldGenerator(new WorldGenCustomOres(), 0);
-		GameRegistry.registerWorldGenerator(new WorldGenCustomStructures(), 0);
 		
 		EntityInit.registerEntities();
 		RenderHandler.RegisterEntityRenders();
 	}
 	
-	public static void initRegistries() {
-		
+	public static void initRegistries() 
+	{
+		NetworkRegistry.INSTANCE.registerGuiHandler(Main.instance, new GuiHandler());
+
 	}
 	
 	public static void postInitRegistries() {

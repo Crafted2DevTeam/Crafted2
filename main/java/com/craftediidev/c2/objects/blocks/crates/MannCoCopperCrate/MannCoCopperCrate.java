@@ -6,6 +6,7 @@ import com.craftediidev.c2.init.ModItems;
 import com.craftediidev.c2.objects.blocks.BlockBase;
 import com.craftediidev.c2.util.Reference;
 
+import net.minecraft.block.BlockContainer;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -21,12 +22,14 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class MannCoCopperCrate extends BlockBase
+public class MannCoCopperCrate extends BlockContainer
 {
 
-	public MannCoCopperCrate(String name, Material material) 
+	public MannCoCopperCrate(String name) 
 	{
-		super(name, material);
+		
+		 
+		super(Material.IRON);
 		setSoundType(SoundType.METAL);
 		setHardness(5.0f);
 		setResistance(15.0f);
@@ -77,17 +80,13 @@ public class MannCoCopperCrate extends BlockBase
 			}	
 		}
 	}
-	
+	@Override
 	public TileEntity createNewTileEntity(World worldIn, int meta)
 	{
 		return new TileEntityMannCoCopperCrate();
 	}
 	
-	@Override
-	public EnumBlockRenderType getRenderType(IBlockState state) 
-	{
-		return EnumBlockRenderType.ENTITYBLOCK_ANIMATED;
-	}
+	 
 	
 	@Override
 	public boolean isFullBlock(IBlockState state) 

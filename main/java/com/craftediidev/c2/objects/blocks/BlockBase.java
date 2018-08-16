@@ -3,7 +3,7 @@ package com.craftediidev.c2.objects.blocks;
 import com.craftediidev.c2.Main;
 import com.craftediidev.c2.init.ModBlocks;
 import com.craftediidev.c2.init.ModItems;
-import com.craftediidev.c2.util.interfaces.IHasModel;
+import com.craftediidev.c2.util.IHasModel;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

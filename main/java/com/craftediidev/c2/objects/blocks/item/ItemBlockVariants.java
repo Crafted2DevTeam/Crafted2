@@ -1,6 +1,6 @@
 package com.craftediidev.c2.objects.blocks.item;
 
-import com.craftediidev.c2.util.interfaces.IMetaName;
+import com.craftediidev.c2.util.IMetaName;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
